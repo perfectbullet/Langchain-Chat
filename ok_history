@@ -1,0 +1,14 @@
+    1  nvcc -v
+    2  nvcc -V
+    3  pip3 wheel -w torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    4  pip install torch --no-index -f .
+    5  pip3 install torch torchvision torchaudio --no-index -f wheel_of_torch_cu118
+    6  pip3 uninstall torch torchvision torchaudio
+    7  pip3 install torch torchvision torchaudio --no-index -f wheel_of_torch_cu118
+    8  pip install --upgrade xformers --index-url https://download.pytorch.org/whl/cu118
+    9  pip wheel -w wheel_of_torch_cu118/ xformers --index-url https://download.pytorch.org/whl/cu118
+   10  pip3 install xformers --no-index -f wheel_of_torch_cu118
+   11  pip3 install torch torchvision torchaudio --no-index -f wheel_of_torch_cu118
+   12  python3 startup.py -a
+   13  history
+   14  history > ok_history
